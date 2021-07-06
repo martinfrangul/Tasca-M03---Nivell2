@@ -1,0 +1,330 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-gral {
+    width: 95%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+}
+
+/*CAIXA 1 i 2*/
+
+
+.container-gral .caixa1, 
+.container-gral .caixa2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-gral .caixa1 {
+    background-color: none;
+    justify-content:space-between;
+    height: 7%;
+    display: flex;
+}
+
+.container-gral .caixa2 {
+    border-top-width: 2px;
+    margin-bottom: 2%;
+    justify-content: center;
+    height: 30%;
+}
+
+/*ELEMENTS CAIXA1*/
+
+.caixa1 .box3 {
+    height: 25%;
+    background-color: #eb5454;
+}
+
+.caixa1 .box3 {
+    width: 15%;
+}
+
+/*LOGO*/
+
+.logo-container {
+    width: 3%;
+    object-fit: cover;
+    margin-left: 7%;
+}
+
+.logo-container .logo {
+    width: 100%;
+    height: 100%;
+}
+
+/*BARRA DE NAVEGACIÓ*/
+
+.nav {
+    width: 35%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30%;
+    margin-bottom: 1%;
+}
+
+.nav-cont {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.nav-cont .nav-icon {
+    width: 15%;
+}
+
+
+.nav-cont .nav-txt {
+    font-size: 70%;
+    margin-left: 8%;
+}
+
+.box3 {
+    justify-items: right;
+}
+
+
+/*ELEMENTS CAIXA2*/
+
+.box1-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 63%;     
+}
+
+.box1-2 .slogan {
+    position: absolute;
+    font-size: 1vw;
+    margin-top: 2%;
+    color: #71a2c4;
+}
+/*CONTENIDOR CAIXA 3 i 4
+A diferència de les altres caixes aquestas 2 tenen un contenidor*/
+
+
+.cont3i4 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+/*CAIXA 3 I 4*/
+
+.cont3i4 .caixa3, .caixa4 {
+    height: 100%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*CAIXA 3*/
+ 
+.cont3i4 .caixa3 {
+    width: 70%;
+    background-color: #4f4e6b;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+}
+
+/*CAIXA 4*/
+
+.cont3i4 .caixa4 {
+    width: 30%;
+    border-left-width: 0px;
+    background-color: #f73f52;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*ELEMENTS CAIXA 3*/
+
+.caixa3 .artLeft, .artRight{
+    width: 45%;
+    height: 10%;
+    background-color: #1e6db0;
+}
+
+.caixa3 .artRight {
+    justify-items: right;
+}
+
+.caixa3 .artLeft {
+    justify-items: left;
+}
+
+.caixa3 .artSol {
+    width: 94%;
+    height: 10%;
+    background-color: #71a2c4;
+}
+
+/*ELEMENTS CAIXA 4*/
+
+.caixa4 .artLat1, .artLat2 {
+    width: 85%;
+    height: 10%;
+    background-color: #feeb84;    
+}
+
+.caixa4 .artLat1 {
+    margin: 7% 0% 3% 0%;
+}
+
+
+/*CAIXA 5*/
+
+.caixa5 {
+    width: 100%;
+    height: 7%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+    background-color: #e7af2f;
+}
+
+/*TAULETA*/
+
+@media (max-width: 1024px) {
+    
+    .container-gral {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .container-gral .caixa2 {
+        margin-bottom: 4%;
+    }
+    
+    .cont3i4 .caixa3, 
+    .cont3i4 .caixa4{
+        border-color: yellow;
+        width: 100%;
+    }
+
+    .cont3i4 .caixa4 .artLat1,
+    .cont3i4 .caixa4 .artLat2{
+        width: 95%;
+        height: 20%;
+    }
+
+    .cont3i4 .caixa4{
+        border-left-width: 15px;
+        border-top-width: 0px;
+        justify-content: center;
+        align-content: center;
+        height: 50%;
+    }
+    .cont3i4 {
+        flex-direction: column;
+        margin-bottom: 4%;
+    }
+
+    .caixa4 .artLat1 {
+        margin: 0% 0% 2% 0%;
+    }
+}
+
+
+/*MÒBIL*/
+
+@media (max-width: 500px) {
+    
+    .container-gral {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    .container-gral .caixa1 {
+        border-bottom-width: 6px;
+        background-color: #2d4158;
+        justify-content:space-around;
+    }
+    
+    .container-gral .caixa2 {
+        margin-bottom: 10%;
+    }
+    
+    .container-gral .caixa1, 
+    .container-gral .caixa2 {
+    height: 10%;
+    border-width: 10px;
+    }
+
+    .caixa1 .box1, .box2, .box3 {
+        height: 35%;
+    }
+
+    .caixa1 .box2 {
+        width: 40%;
+    }
+
+    .box1-2 {
+        width: 85%;
+    }
+
+    .cont3i4 {
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .cont3i4 .caixa3,
+    .cont3i4 .caixa4 {
+        border-color: yellow;
+        width: 100%;
+    }
+
+    .cont3i4 .caixa4 .artLat1,
+    .cont3i4 .caixa4 .artLat2{
+        width: 95%;
+        height: 20%;
+    }
+
+    .cont3i4 .caixa4{
+        border-left-width: 15px;
+        border-top-width: 0px;
+        justify-content: center;
+        align-content: center;
+        height: 50%;
+    }
+    
+
+    .caixa4 .artLat1 {
+        margin: 0% 0% 2% 0%;
+    }
+}
