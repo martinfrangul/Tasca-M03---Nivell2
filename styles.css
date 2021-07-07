@@ -9,10 +9,10 @@ body {
 }
 
 .container-gral {
-    width: 95%;
+    width: 70%;
     height: 100%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -33,14 +33,13 @@ body {
     background-color: none;
     justify-content:space-between;
     height: 7%;
-    display: flex;
 }
 
 .container-gral .caixa2 {
     border-top-width: 2px;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     justify-content: center;
-    height: 35%;
+    height: 20vh;
 }
 
 /*ELEMENTS CAIXA1*/
@@ -91,25 +90,26 @@ body {
 /*XARXES*/
 
 .xarxes-cont {
-    width: 18%;
+    width: fit-content;
     justify-content: space-evenly;
     display: flex;
 }
 
-.xarxes-cont . {
-    justify-content: space-evenly;
-    display: flex;
+.xarxes-cont .iconsX-cont {
+    width:5%;
 }
+
 
 .xarxes-cont .icons-x {
-    width: 25%;
-    
+    width: 100%;
     text-align: center;
 }
 
+
+
 /*ELEMENTS CAIXA2*/
 
-.box1-2 {
+.capçalera {
     width: 100%;
     height: 100%;
     position: relative;
@@ -118,14 +118,14 @@ body {
     align-items: center;
 }
 
-.box1-2 img {
+.capçalera .capImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 63%;     
 }
 
-.box1-2 .slogan {
+.capçalera .slogan {
     position: absolute;
     font-size: 1vw;
     margin-top: 2%;
@@ -137,9 +137,10 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .cont3i4 {
     width: 100%;
-    height: 30%;
+    height: 60%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 2%;
 }
 
@@ -147,48 +148,68 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .cont3i4 .caixa3, .caixa4 {
     height: 100%;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: black;
-    border-width: 20px 20px 20px 20px;
     display: flex;
-    align-items: center;
 }
-
 /*CAIXA 3*/
  
 .cont3i4 .caixa3 {
-    width: 70%;
-    background-color: #4f4e6b;
+    width: 100%;
     flex-flow: row wrap;
-    justify-content:space-evenly;
-    align-content: space-evenly;
-}
-
-/*CAIXA 4*/
-
-.cont3i4 .caixa4 {
-    width: 30%;
-    border-left-width: 0px;
-    background-color: #f73f52;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content:flex-start;
+    align-content:space-between;
+    background-color: #e6e7e7;
+    align-items: baseline;
 }
 
 /*ELEMENTS CAIXA 3*/
 
-.caixa3 .artLeft, .artRight{
-    width: 45%;
-    height: 10%;
-    background-color: #1e6db0;
+.caixa3 .artLeft1, 
+.caixa3 .artRight1,
+.caixa3 .artLeft2,
+.caixa3 .artRight2 {
+    width: 49%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    position: relative;
 }
 
-.caixa3 .artRight {
+.caixa3 .artLeft1-img, 
+.caixa3 .artRight1-img,
+.caixa3 .artLeft2-img,
+.caixa3 .artRight2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.caixa3 .artRight1,
+.caixa3 .artRight2 {
     justify-items: right;
 }
 
-.caixa3 .artLeft {
+.caixa3 .artLeft1,
+.caixa3 .artLeft2 {
     justify-items: left;
+}
+
+.caixa3 .text-img {
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    left: 0px;
+}
+
+.caixa3 .titulo-img {
+    color: white;
+    background-color: #a42a2b;
+    font-size: 1.3vh;
 }
 
 .caixa3 .artSol {
@@ -197,12 +218,28 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     background-color: #71a2c4;
 }
 
+.text-art {
+    font-size: 1.5vh;
+}
+
+/*CAIXA 4*/
+
+.cont3i4 .caixa4 {
+    width: 30%;
+    border-left-width: 0px;
+    background-color: #e6e7e7;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
 /*ELEMENTS CAIXA 4*/
 
 .caixa4 .artLat1, .artLat2 {
     width: 85%;
     height: 10%;
-    background-color: #feeb84;    
+    background-color: white;    
 }
 
 .caixa4 .artLat1 {
@@ -214,7 +251,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .caixa5 {
     width: 100%;
-    height: 7%;
+    height: 6%;
     box-sizing: border-box;
     border-style: solid;
     border-color: black;
