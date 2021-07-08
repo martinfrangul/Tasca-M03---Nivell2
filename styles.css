@@ -39,7 +39,7 @@ body {
     border-top-width: 2px;
     margin-bottom: 1%;
     justify-content: center;
-    height: 20vh;
+    height: 25vh;
 }
 
 /*ELEMENTS CAIXA1*/
@@ -147,7 +147,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 /*CAIXA 3 I 4*/
 
 .cont3i4 .caixa3, .caixa4 {
-    height: 100%;
+    height: 60vh;
     display: flex;
 }
 /*CAIXA 3*/
@@ -168,16 +168,17 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 .caixa3 .artLeft2,
 .caixa3 .artRight2 {
     width: 49%;
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: column;
-    margin: 1px;
+    margin: 10px 1px;
     box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
     border-color: gray;
     position: relative;
 }
+
 
 .caixa3 .artLeft1-img, 
 .caixa3 .artRight1-img,
@@ -189,38 +190,51 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     position: relative;
 }
 
-.caixa3 .artRight1,
-.caixa3 .artRight2 {
-    justify-items: right;
-}
-
-.caixa3 .artLeft1,
-.caixa3 .artLeft2 {
-    justify-items: left;
-}
-
 .caixa3 .text-img {
+    width: 100%;
+    height: 10%;
     position: absolute;
     color: white;
     bottom: 2%;
     left: 0px;
 }
 
-.caixa3 .titulo-img {
-    color: white;
-    background-color: #a42a2b;
-    font-size: 1.3vh;
+.titulo-cont {
+    width: 100%;
+    height: 10%;
+    background-color: #8a534a;
 }
 
-.caixa3 .artSol {
-    width: 94%;
-    height: 10%;
-    background-color: #71a2c4;
+.caixa3 .titulo-img {
+    width: 100%;
+    color: white;
+    font-size: 1.3vh;
+    justify-content: left;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;  
 }
 
 .text-art {
     font-size: 1.5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
 }
+
+.caixa3 .artSol {
+    width: 100%;
+    height: 3%;
+    background-color: #8a534a;
+}
+
+.text-artSol {
+    color: white;
+    text-align: center;
+    font-size: 1.3vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+
 
 /*CAIXA 4*/
 
@@ -229,34 +243,49 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     border-left-width: 0px;
     background-color: #e6e7e7;
     flex-direction: column;
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
 }
-
-
 
 /*ELEMENTS CAIXA 4*/
 
-.caixa4 .artLat1, .artLat2 {
-    width: 85%;
-    height: 10%;
-    background-color: white;    
+.caixa4 .artLat1, 
+.caixa4 .artLat2 {
+    width: 90%;
+    height: 10vh;
+    background-color: #8a534a;
+    
 }
 
 .caixa4 .artLat1 {
     margin: 7% 0% 3% 0%;
 }
 
+.text-artLat {
+    color: white;
+    text-align: center;
+    font-size: 0.6vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+
+}
 
 /*CAIXA 5*/
 
-.caixa5 {
+.footer {
     width: 100%;
-    height: 6%;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: black;
-    border-width: 15px;
-    background-color: #e7af2f;
+    height: 4vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text-footer {
+    color: #8a534a;
+    font-size: 0.7vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
 }
 
 /*TAULETA*/
