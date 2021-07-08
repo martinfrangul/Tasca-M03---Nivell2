@@ -5,7 +5,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    background-color: #ffffe0;
 }
 
 .container-gral {
@@ -40,6 +40,9 @@ body {
     margin-bottom: 1%;
     justify-content: center;
     height: 25vh;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 /*ELEMENTS CAIXA1*/
@@ -48,7 +51,7 @@ body {
 /*LOGO*/
 
 .logo-container {
-    width: 3%;
+    width: 2vw;
     object-fit: cover;
     margin-left: 7%;
 }
@@ -61,16 +64,16 @@ body {
 /*BARRA DE NAVEGACIÓ*/
 
 .nav {
-    width: 35%;
+    width: 25%;
     height: 25%;
     display: flex;
     flex-direction: row;
-    margin-right: 25%;
+    margin-right: 30%;
     margin-bottom: 1%;
 }
 
 .nav-cont {
-    width: 15%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -83,7 +86,7 @@ body {
 
 
 .nav-cont .nav-txt {
-    font-size: 70%;
+    font-size: 0.7vw;
     margin-left: 8%;
 }
 
@@ -109,23 +112,14 @@ body {
 
 /*ELEMENTS CAIXA2*/
 
-.capçalera {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.capçalera .capImg {
+.caixa2 .capImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 63%;     
 }
 
-.capçalera .slogan {
+.caixa2 .slogan {
     position: absolute;
     font-size: 1vw;
     margin-top: 2%;
@@ -137,28 +131,35 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .cont3i4 {
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2%;
+    background-color: #e6e7e7;
 }
 
 /*CAIXA 3 I 4*/
 
 .cont3i4 .caixa3, .caixa4 {
-    height: 60vh;
     display: flex;
+    height: fit-content;
 }
 /*CAIXA 3*/
  
 .cont3i4 .caixa3 {
     width: 100%;
     flex-flow: row wrap;
-    justify-content:flex-start;
-    align-content:space-between;
-    background-color: #e6e7e7;
-    align-items: baseline;
+    justify-content:space-evenly;
+}
+
+/*CAIXA 4*/
+
+.cont3i4 .caixa4 {
+    width: 30%;
+    border-left-width: 0px;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*ELEMENTS CAIXA 3*/
@@ -168,10 +169,9 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 .caixa3 .artLeft2,
 .caixa3 .artRight2 {
     width: 49%;
-    height: 35%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin: 10px 1px;
     box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
@@ -179,6 +179,24 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     position: relative;
 }
 
+.caixa3 .artLeft1, 
+.caixa3 .artRight1 {
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.caixa3 .artLeft2,
+.caixa3 .artRight2 {
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+
+.txtImg-cont {
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-start;
+    height: 100%;
+}
 
 .caixa3 .artLeft1-img, 
 .caixa3 .artRight1-img,
@@ -190,13 +208,11 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     position: relative;
 }
 
-.caixa3 .text-img {
+.caixa3 .txtImg-cont .text-img {
     width: 100%;
-    height: 10%;
+    height: 5%;
     position: absolute;
     color: white;
-    bottom: 2%;
-    left: 0px;
 }
 
 .titulo-cont {
@@ -220,6 +236,12 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     font-weight: lighter;
 }
 
+.leerMas {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: black;
+}
+
 .caixa3 .artSol {
     width: 100%;
     height: 3%;
@@ -236,29 +258,18 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 
 
-/*CAIXA 4*/
-
-.cont3i4 .caixa4 {
-    width: 30%;
-    border-left-width: 0px;
-    background-color: #e6e7e7;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-
 /*ELEMENTS CAIXA 4*/
 
 .caixa4 .artLat1, 
 .caixa4 .artLat2 {
-    width: 90%;
-    height: 10vh;
+    width: 95%;
+    height: auto;
     background-color: #8a534a;
     
 }
 
 .caixa4 .artLat1 {
-    margin: 7% 0% 3% 0%;
+    margin: 3% 0% 3% 0%;
 }
 
 .text-artLat {
@@ -290,7 +301,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 /*TAULETA*/
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
     
     .container-gral {
         width: 70%;
@@ -298,29 +309,75 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         margin-right: 15%;
     }
 
+    .nav {
+        margin-right: 0%;
+    }
+    
+    .nav-cont {
+        width: 30%;
+    }
+
     .container-gral .caixa2 {
-        margin-bottom: 4%;
+        border-top-width: 2px;
+        margin-bottom: 1%;
+        justify-content: center;
+        height: 15vh;
     }
     
     .cont3i4 .caixa3, 
     .cont3i4 .caixa4{
-        border-color: yellow;
         width: 100%;
+    }
+    
+    .cont3i4 .caixa3{
+        height: 70%;
+        margin-top: 1%;
+    }
+
+    .caixa3 .artLeft1, 
+    .caixa3 .artRight1,
+    .caixa3 .artLeft2,
+    .caixa3 .artRight2 {
+        height: 32%;
     }
 
     .cont3i4 .caixa4 .artLat1,
     .cont3i4 .caixa4 .artLat2{
         width: 95%;
-        height: 20%;
+        height: 40%;
     }
 
+    .text-art {
+        font-size: 1.1vh;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+
+    .titulo-cont {
+        width: 100%;
+        height: 40%;
+        background-color: #8a534a;
+    }
+
+    .caixa3 .text-img {
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        color: white;
+        bottom: 2%;
+        left: 0px;
+        font-size: 1vw;
+    }
+    
+    
     .cont3i4 .caixa4{
         border-left-width: 15px;
         border-top-width: 0px;
         justify-content: center;
         align-content: center;
-        height: 50%;
+        height: 70%;
     }
+   
     .cont3i4 {
         flex-direction: column;
         margin-bottom: 4%;
@@ -329,12 +386,36 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     .caixa4 .artLat1 {
         margin: 0% 0% 2% 0%;
     }
+    
+    .caixa3 .artSol {
+        width: 100%;
+        height: 3%;
+        background-color: #8a534a;
+        display: flex;
+        justify-content: center;
+}
+    .text-artSol {
+        color: white;
+        text-align: center;
+        font-size: 1.1vh;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+
+    .text-artLat {
+        color: white;
+        text-align: center;
+        font-size: 1.2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    
+    }
 }
 
 
 /*MÒBIL*/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     
     .container-gral {
         width: 50%;
@@ -342,61 +423,18 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         margin-right: 25%;
     }
     
-    .container-gral .caixa1 {
-        border-bottom-width: 6px;
-        background-color: #2d4158;
-        justify-content:space-around;
+    .nav {
+        margin-right: 0%;
+    }
+    
+    .nav-cont {
+        width: 30%;
     }
     
     .container-gral .caixa2 {
-        margin-bottom: 10%;
-    }
-    
-    .container-gral .caixa1, 
-    .container-gral .caixa2 {
-    height: 10%;
-    border-width: 10px;
-    }
-
-    .caixa1 .box1, .box2, .box3 {
-        height: 35%;
-    }
-
-    .caixa1 .box2 {
-        width: 40%;
-    }
-
-    .box1-2 {
-        width: 85%;
-    }
-
-    .cont3i4 {
-        flex-direction: column;
-        margin-bottom: 10%;
-    }
-
-    .cont3i4 .caixa3,
-    .cont3i4 .caixa4 {
-        border-color: yellow;
-        width: 100%;
-    }
-
-    .cont3i4 .caixa4 .artLat1,
-    .cont3i4 .caixa4 .artLat2{
-        width: 95%;
-        height: 20%;
-    }
-
-    .cont3i4 .caixa4{
-        border-left-width: 15px;
-        border-top-width: 0px;
+        border-top-width: 2px;
+        margin-bottom: 2%;
         justify-content: center;
-        align-content: center;
-        height: 50%;
-    }
-    
-
-    .caixa4 .artLat1 {
-        margin: 0% 0% 2% 0%;
+        height: 10vh;
     }
 }
