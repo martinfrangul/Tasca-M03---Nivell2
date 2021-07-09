@@ -9,10 +9,10 @@ body {
 }
 
 .container-gral {
-    width: 70%;
+    width: 95%;
     height: 100%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -39,7 +39,7 @@ body {
     border-top-width: 2px;
     margin-bottom: 1%;
     justify-content: center;
-    height: 25vh;
+    height: 30vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -107,8 +107,6 @@ body {
     width: 100%;
     text-align: center;
 }
-
-
 
 /*ELEMENTS CAIXA2*/
 
@@ -195,7 +193,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     display: flex;
     align-items: flex-end;
     justify-items: flex-start;
-    height: 100%;
+    height: fit-content;
 }
 
 .caixa3 .artLeft1-img, 
@@ -217,21 +215,21 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .titulo-cont {
     width: 100%;
-    height: 10%;
+    height: fit-content;
     background-color: #8a534a;
 }
 
 .caixa3 .titulo-img {
     width: 100%;
     color: white;
-    font-size: 1.3vh;
+    font-size: 1.3vw;
     justify-content: left;  
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;  
 }
 
 .text-art {
-    font-size: 1.5vh;
+    font-size: 1.1vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
@@ -244,14 +242,14 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .caixa3 .artSol {
     width: 100%;
-    height: 3%;
+    height: fit-content;
     background-color: #8a534a;
 }
 
 .text-artSol {
     color: white;
     text-align: center;
-    font-size: 1.3vh;
+    font-size: 1vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
@@ -265,7 +263,6 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     width: 95%;
     height: auto;
     background-color: #8a534a;
-    
 }
 
 .caixa4 .artLat1 {
@@ -275,10 +272,10 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 .text-artLat {
     color: white;
     text-align: center;
-    font-size: 0.6vw;
+    font-size: 1vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-
+    padding: 5px;
 }
 
 /*CAIXA 5*/
@@ -294,7 +291,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 .footer .text-footer {
     color: #8a534a;
-    font-size: 0.7vw;
+    font-size: 1.2vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
