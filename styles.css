@@ -51,7 +51,7 @@ body {
 /*LOGO*/
 
 .logo-container {
-    width: 2vw;
+    width: 2.5vw;
     object-fit: cover;
     margin-left: 7%;
 }
@@ -64,8 +64,8 @@ body {
 /*BARRA DE NAVEGACIÓ*/
 
 .nav {
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     margin-right: 30%;
@@ -74,7 +74,7 @@ body {
 
 .nav-cont {
     width: 25%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -86,7 +86,7 @@ body {
 
 
 .nav-cont .nav-txt {
-    font-size: 0.7vw;
+    font-size: 1vw;
     margin-left: 8%;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .xarxes-cont .iconsX-cont {
-    width:5%;
+    width:10%;
 }
 
 
