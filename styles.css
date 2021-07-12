@@ -51,29 +51,27 @@ body {
 /*LOGO*/
 
 .logo-container {
-    width: 2.5vw;
+    width: 20%;
     object-fit: cover;
-    margin-left: 7%;
+    text-align: center;
 }
 
 .logo-container .logo {
-    width: 100%;
+    width: 25%;
     height: 100%;
 }
 
 /*BARRA DE NAVEGACIÓ*/
 
 .nav {
-    width: 30%;
+    width: 60%;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    margin-right: 30%;
-    margin-bottom: 1%;
 }
 
 .nav-cont {
-    width: 25%;
+    margin-right: 15px;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -81,31 +79,46 @@ body {
 }
 
 .nav-cont .nav-icon {
-    width: 15%;
+    width: 17px;
+    align-self: center;
 }
 
 
 .nav-cont .nav-txt {
     font-size: 1vw;
     margin-left: 8%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.nav-cont .nav-txt:hover {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /*XARXES*/
 
 .xarxes-cont {
-    width: fit-content;
+    width: 20%;
     justify-content: space-evenly;
     display: flex;
 }
 
 .xarxes-cont .iconsX-cont {
-    width:10%;
+    width: 10%;
 }
 
 
 .xarxes-cont .icons-x {
     width: 100%;
     text-align: center;
+}
+
+.xarxes-cont .icons-x:hover {
+opacity: 50%;
+cursor: pointer;
+
 }
 
 /*ELEMENTS CAIXA2*/
@@ -228,6 +241,12 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     font-weight: lighter;  
 }
 
+.text-art-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .text-art {
     font-size: 1.1vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -238,6 +257,10 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     font-size: 1.2vw;
     text-decoration: none;
     color: black;
+}
+
+.leerMas:hover{
+    color: blue;
 }
 
 .caixa3 .artSol {
@@ -298,7 +321,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 /*TAULETA*/
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     
     .container-gral {
         width: 70%;
@@ -307,18 +330,25 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     }
 
     .nav {
-        margin-right: 0%;
+        width: 40%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
     }
     
     .nav-cont {
         width: 30%;
     }
 
+    .nav-cont .nav-icon {
+        width: 15%;
+    }
+
     .container-gral .caixa2 {
         border-top-width: 2px;
         margin-bottom: 1%;
         justify-content: center;
-        height: 15vh;
+        height: 10vh;
     }
     
     .cont3i4 .caixa3, 
@@ -331,38 +361,21 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         margin-top: 1%;
     }
 
-    .caixa3 .artLeft1, 
-    .caixa3 .artRight1,
-    .caixa3 .artLeft2,
-    .caixa3 .artRight2 {
-        height: 32%;
-    }
-
     .cont3i4 .caixa4 .artLat1,
     .cont3i4 .caixa4 .artLat2{
-        width: 95%;
+        width: 100%;
         height: 40%;
     }
 
     .text-art {
-        font-size: 1.1vh;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: lighter;
+        font-size: 1vh;
     }
 
-    .titulo-cont {
-        width: 100%;
-        height: 40%;
-        background-color: #8a534a;
-    }
 
-    .caixa3 .text-img {
-        width: 100%;
-        height: 10%;
+    .text-img {
         position: absolute;
         color: white;
-        bottom: 2%;
-        left: 0px;
+        margin-left: 10px;
         font-size: 1vw;
     }
     
@@ -381,7 +394,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     }
 
     .caixa4 .artLat1 {
-        margin: 0% 0% 2% 0%;
+        margin: 3% 0% 2% 0%;
     }
     
     .caixa3 .artSol {
@@ -412,7 +425,7 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
 
 /*MÒBIL*/
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     
     .container-gral {
         width: 50%;
@@ -433,5 +446,9 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         margin-bottom: 2%;
         justify-content: center;
         height: 10vh;
+    }
+
+    .text-artSol {
+        font-size: 1vw;
     }
 }
