@@ -45,6 +45,7 @@ body {
     align-items: center;
 }
 
+
 /*ELEMENTS CAIXA1*/
 
 
@@ -83,7 +84,6 @@ body {
     align-self: center;
 }
 
-
 .nav-cont .nav-txt {
     font-size: 1vw;
     margin-left: 8%;
@@ -109,16 +109,14 @@ body {
     width: 10%;
 }
 
-
 .xarxes-cont .icons-x {
     width: 100%;
     text-align: center;
 }
 
 .xarxes-cont .icons-x:hover {
-opacity: 50%;
-cursor: pointer;
-
+    opacity: 50%;
+    cursor: pointer;
 }
 
 /*ELEMENTS CAIXA2*/
@@ -137,7 +135,7 @@ cursor: pointer;
     color: rgba(178, 190, 195,0.5);
 }
 /*CONTENIDOR CAIXA 3 i 4
-A diferència de les altres caixes aquestas 2 tenen un contenidor*/
+A diferència de les altres caixes aquestas 2 tenen un mateix contenidor*/
 
 
 .cont3i4 {
@@ -150,12 +148,14 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     background-color: #e6e7e7;
 }
 
-/*CAIXA 3 I 4*/
+/*CAIXA 3 I CAIXA 4*/
 
-.cont3i4 .caixa3, .caixa4 {
+.cont3i4 .caixa3, 
+.cont3i4 .caixa4 {
     display: flex;
     height: fit-content;
 }
+
 /*CAIXA 3*/
  
 .cont3i4 .caixa3 {
@@ -345,12 +345,14 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
     }
 
     .container-gral .caixa2 {
-        border-top-width: 2px;
-        margin-bottom: 1%;
-        justify-content: center;
         height: 10vh;
     }
     
+    .cont3i4 {
+        flex-direction: column;
+        margin-bottom: 4%;
+    }
+
     .cont3i4 .caixa3, 
     .cont3i4 .caixa4{
         width: 100%;
@@ -361,24 +363,21 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         margin-top: 1%;
     }
 
-    .cont3i4 .caixa4 .artLat1,
-    .cont3i4 .caixa4 .artLat2{
-        width: 100%;
-        height: 40%;
+    .text-img {
+        color: white;
+        margin-left: 10px;
+        font-size: 1vw;
     }
 
     .text-art {
         font-size: 1vh;
     }
 
-
-    .text-img {
-        position: absolute;
-        color: white;
-        margin-left: 10px;
-        font-size: 1vw;
+    .cont3i4 .caixa4 .artLat1,
+    .cont3i4 .caixa4 .artLat2{
+        width: 100%;
+        height: 40%;
     }
-    
     
     .cont3i4 .caixa4{
         border-left-width: 15px;
@@ -388,11 +387,6 @@ A diferència de les altres caixes aquestas 2 tenen un contenidor*/
         height: 70%;
     }
    
-    .cont3i4 {
-        flex-direction: column;
-        margin-bottom: 4%;
-    }
-
     .caixa4 .artLat1 {
         margin: 3% 0% 2% 0%;
     }
